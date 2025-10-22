@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.assignment5">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Student Manager"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Assignment5">
+
+        <!-- Main/Launcher Activity -->
+        <activity
+            android:name="com.example.assignment5.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Faculty Module -->
+        <activity android:name="com.example.assignment5.faculty.FacultyCreateActivity" />
+        <activity android:name="com.example.assignment5.faculty.FacultyEditActivity" />
+        <activity android:name="com.example.assignment5.faculty.FacultyDetailActivity" />
+        <activity android:name="com.example.assignment5.faculty.FacultyListActivity" />
+
+        <!-- Student Module -->
+        <activity android:name="com.example.assignment5.student.StudentListActivity" />
+        <activity android:name="com.example.assignment5.student.StudentCreateActivity" />
+        <activity android:name="com.example.assignment5.student.StudentEditActivity" />
+        <activity android:name="com.example.assignment5.student.StudentDetailActivity" />
+
+        <!-- Course Module -->
+        <activity android:name="com.example.assignment5.course.CourseListActivity" />
+        <activity android:name="com.example.assignment5.course.CourseCreateActivity" />
+        <activity android:name="com.example.assignment5.course.CourseEditActivity" />
+        <activity android:name="com.example.assignment5.course.CourseDetailActivity" />
+
+    </application>
+
+</manifest>

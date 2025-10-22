@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Student"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/edtStudentNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Student Name" />
+
+        <EditText
+            android:id="@+id/edtStudentAgeEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:inputType="number"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/etStudentEmailEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/etStudentPhoneEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:layout_marginTop="10dp" />
+
+
+        <Spinner
+            android:id="@+id/spinnerFacultyEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btnUpdateStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Student"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
